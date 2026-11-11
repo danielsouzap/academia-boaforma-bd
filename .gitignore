@@ -1,0 +1,8 @@
+# arquivos do macOS
+.DS_Store
+
+# arquivos temporarios do Word/Office
+~$*
+
+# programas de terceiros (o link do brModelo esta no README)
+ferramentas/
