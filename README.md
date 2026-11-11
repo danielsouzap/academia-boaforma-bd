@@ -19,7 +19,7 @@ planos, instrutores, modalidades, turmas, pagamentos, frequência na catraca e f
 | Etapa | Ferramenta | Arquivo |
 |---|---|---|
 | 1. Modelagem conceitual (MER) | brModelo 3.31 | `diagramas/MER_Academia_BoaForma.brM3` |
-| 2. Modelagem lógica (DER) | MySQL Workbench (Data Modeling) | `diagramas/DER_Academia_BoaForma.mwb` |
+| 2. Modelagem lógica (DER) | MySQL Workbench (Data Modeling) | `diagramas/DER_Academia_BoaForma.png` |
 | 3. Modelagem física (script SQL) | MySQL Workbench (SQL Development) | `sql/01_criacao_tabelas.sql` e `sql/02_insercao_dados.sql` |
 | 4. Consultas SQL | MySQL | `sql/03_consultas.sql` |
 | Trabalho escrito (ABNT) | Word | `documento/Projeto_Final_BD_Academia_BoaForma.pdf` |
@@ -81,8 +81,10 @@ mysql -u root -t < sql/03_consultas.sql
 
 - **MER:** baixar o brModelo no [GitHub oficial do projeto](https://github.com/chcandido/brModelo/releases)
   (precisa de Java), abrir com `java -jar brModelo.jar` e ir em **Arquivo > Abrir** >
-  `diagramas/MER_Academia_BoaForma.brM3`. O arquivo `.xml` é o mesmo MER em outro formato que o brModelo também abre.
-- **DER:** no MySQL Workbench, **File > Open Model** > `diagramas/DER_Academia_BoaForma.mwb`.
+  `diagramas/MER_Academia_BoaForma.brM3`.
+- **DER:** no MySQL Workbench, **File > Import > Reverse Engineer MySQL Create Script**, escolher o
+  `sql/01_criacao_tabelas.sql` e marcar **Place imported objects on a diagram**. O Workbench monta o diagrama
+  a partir do script (a imagem pronta está em `diagramas/DER_Academia_BoaForma.png`).
 
 ## Observação
 
